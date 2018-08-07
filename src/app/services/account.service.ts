@@ -57,7 +57,7 @@ export class AccountService {
   }
 
   getTokens(): Observable<Token[]> {
-    return this.http.get(`https://raw.githubusercontent.com/eoscafe/eos-airdrops/master/tokens.json`).pipe(
+    return this.http.get(`${environment.apiUrl}/json/tokens.json`).pipe(
       map((tokens: any) => tokens.map(token => token as Token))
     );
   }

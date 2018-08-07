@@ -15,9 +15,8 @@ export class ScatterService {
 
     this.network = {
       blockchain: 'eos',
-      host: 'api1.eosdublin.io',
-      port: 443,
-      chainId: 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906'
+      host: 'eos.xdac.co',
+      port: 443
     };
     if (this.scatter) {
       this.eos = this.scatter.eos(this.network, Eos, {chainId: this.network.chainId}, 'https');
@@ -54,7 +53,7 @@ export class ScatterService {
   support(amount: string) {
     this.load();
     const account = this.scatter.identity.accounts.find(acc => acc.blockchain === 'eos');
-    return this.eos.transfer(account.name, 'trackeraegis', amount + " EOS", 'Aegis Support');
+    return this.eos.transfer(account.name, 'trackeraegis', amount + " XDAC", 'Aegis Support');
   }
 
   refund() {
