@@ -15,7 +15,7 @@ export class ScatterService {
 
     this.network = {
       blockchain: 'eos',
-      host: 'eos.xdac.co',
+      host: 'net.xdac.co',
       port: 443
     };
     if (this.scatter) {

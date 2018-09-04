@@ -108,7 +108,7 @@ export class ProducerComponent implements OnInit {
 
           this.producer = producers[index];
           this.producer.position = position;
-          this.producer.reward = reward.toFixed(0);
+          this.producer.reward = (reward/10).toFixed(0);
           this.producer.votes = percentageVotes.toFixed(2);
           console.log(this.producer);
           

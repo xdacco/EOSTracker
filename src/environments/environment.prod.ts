@@ -1,13 +1,22 @@
+// export const environment = {
+//     production: true,
+//     walletUrl: '',
+//     votingUrl: '',
+//     appName: 'XDAC Tracker',
+//     logoUrl: '/assets/logo.png',
+//     apiUrl: 'https://tracker-api.xdac.co',
+//     blockchainUrl: 'https://net.xdac.co'
+// };
+
 export const environment = {
     production: true,
-    walletUrl: 'https://wallet.xdac.co',
-    votingUrl: 'https://portal.xdac.co',
-    appName: 'XDAC EOS Tracker',
+    walletUrl: '',
+    votingUrl: '',
+    appName: 'XDAC Tracker',
     logoUrl: '/assets/logo.png',
-    apiUrl: 'https://tracker-api.xdac.co',
-    blockchainUrl: 'https://eos.xdac.co'
+    apiUrl: 'https://test-tracker-api.xdac.net',
+    blockchainUrl: 'https://test-net.xdac.net'
 };
-
 // export const environment = {
 //     production: false,
 //     walletUrl: 'http://172.16.238.15:8002',

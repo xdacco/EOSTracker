@@ -76,7 +76,7 @@ export class ProducersComponent implements OnInit, OnDestroy {
               reward = 0;
             }
 
-            this.producers[index].reward = reward.toFixed(0);
+            this.producers[index].reward = (reward/10).toFixed(0);
             this.producers[index].votes = percentageVotes.toFixed(2);
             this.producers[index].numVotes = (this.producers[index].total_votes / this.calculateVoteWeight() / 10000).toFixed(0);
           }

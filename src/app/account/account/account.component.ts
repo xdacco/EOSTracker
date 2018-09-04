@@ -94,9 +94,9 @@ export class AccountComponent implements OnInit {
       });
 
       this.cmcService.getEOSTicker().subscribe(result => {
-        if (result['data']) {
-          this.eosPrice = result['data'].quotes.USD.price;
-        }
+        // if (result['data']) {
+        //   this.eosPrice = result['data'].quotes.USD.price;
+        // }
       });
 
       this.subscriber = this.route.queryParams.subscribe(params => {
